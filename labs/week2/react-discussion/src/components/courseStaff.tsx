@@ -1,0 +1,15 @@
+type CourseStaffProps = {
+  name: String;
+  rating: number;
+  title: String;
+};
+
+export function CourseStaff({ name, rating, title }: CourseStaffProps) {
+  return (
+    <div style={{ backgroundColor: "lightblue" }}>
+      <h3>Name: {name}</h3>
+      <p>Rating: {rating}</p>
+      <p>Title: {title}</p>
+    </div>
+  );
+}
